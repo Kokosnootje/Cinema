@@ -17,6 +17,7 @@ namespace Project_B___Cinema
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+            Console.WriteLine("Dit is een test");
         }
     }
 }
