@@ -15,6 +15,9 @@ namespace Project_B___Cinema
         public Form1()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
         }
+
+
     }
 }
