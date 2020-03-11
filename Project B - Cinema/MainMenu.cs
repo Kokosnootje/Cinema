@@ -22,21 +22,6 @@ namespace Project_B___Cinema
 
         }
 
-        private void pictureBox5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void contactToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void hoofdmenuToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
