@@ -16,5 +16,12 @@ namespace Project_B___Cinema
         {
             InitializeComponent();
         }
+
+        private void GoBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MainMenu mm = new MainMenu();
+            mm.ShowDialog();
+        }
     }
 }
