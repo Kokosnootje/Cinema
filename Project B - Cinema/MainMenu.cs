@@ -46,5 +46,26 @@ namespace Project_B___Cinema
         {
 
         }
+
+        private void loginToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginPage lp = new LoginPage();
+            lp.ShowDialog();
+        }
+
+        private void snacksToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            SnackPage sp = new SnackPage();
+            sp.ShowDialog();
+        }
+
+        private void contactToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            ContactPage cp = new ContactPage();
+            cp.ShowDialog();
+        }
     }
 }
