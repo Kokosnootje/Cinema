@@ -19,6 +19,7 @@ namespace Project_B___Cinema
             Application.Run(new Form1());
             Console.WriteLine("Dit is een test");
             Console.WriteLine("Dit is een test 10/3/2020");
+            Application.Run(new MainMenu());
         }
     }
 }
