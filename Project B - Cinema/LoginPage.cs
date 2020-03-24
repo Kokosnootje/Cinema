@@ -10,33 +10,18 @@ using System.Windows.Forms;
 
 namespace Project_B___Cinema
 {
-    public partial class MainMenu : Form
+    public partial class LoginPage : Form
     {
-        public MainMenu()
+        public LoginPage()
         {
             InitializeComponent();
         }
 
-        private void MainMenu_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void loginToolStripMenuItem_Click(object sender, EventArgs e)
+        private void mainMenuToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-            LoginPage lp = new LoginPage();
-            lp.ShowDialog();
+            MainMenu mm = new MainMenu();
+            mm.ShowDialog();
         }
 
         private void snacksToolStripMenuItem_Click(object sender, EventArgs e)
@@ -46,7 +31,7 @@ namespace Project_B___Cinema
             sp.ShowDialog();
         }
 
-        private void contactToolStripMenuItem_Click_1(object sender, EventArgs e)
+        private void contactToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
             ContactPage cp = new ContactPage();
