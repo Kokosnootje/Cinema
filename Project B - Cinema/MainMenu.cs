@@ -13,25 +13,7 @@ using Newtonsoft.Json.Linq;
 namespace Project_B___Cinema
 {
     public partial class MainMenu : Form
-    {
-        public class Movie
-        {
-            public string id { get; set; }
-            public string title { get; set; }
-            public Genre genre { get; set; }
-            //public string duration { get; set; }
-            //public string language { get; set; }
-            //public string theatreNumber { get; set; }
-            //public string startTime { get; set; }
-            //public string rating { get; set; }
-        }
-
-        public class Genre
-        {
-            public string id { get; set; }
-            public string name { get; set; }
-        }
-        
+    {        
         public MainMenu()
         {
             InitializeComponent();
