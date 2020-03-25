@@ -63,6 +63,9 @@ namespace Project_B___Cinema.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bios_snacks {
+            get {
+                object obj = ResourceManager.GetObject("bios snacks", resourceCulture);
         internal static System.Drawing.Bitmap blade_small {
             get {
                 object obj = ResourceManager.GetObject("blade-small", resourceCulture);
