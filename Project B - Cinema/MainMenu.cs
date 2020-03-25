@@ -7,11 +7,31 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace Project_B___Cinema
 {
     public partial class MainMenu : Form
     {
+        public class Movie
+        {
+            public string id { get; set; }
+            public string title { get; set; }
+            public Genre genre { get; set; }
+            //public string duration { get; set; }
+            //public string language { get; set; }
+            //public string theatreNumber { get; set; }
+            //public string startTime { get; set; }
+            //public string rating { get; set; }
+        }
+
+        public class Genre
+        {
+            public string id { get; set; }
+            public string name { get; set; }
+        }
+        
         public MainMenu()
         {
             InitializeComponent();
@@ -29,7 +49,11 @@ namespace Project_B___Cinema
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-
+            var jsonResponse = "[" +
+                "{'Id':'2','Title':'Blade','Genre':[{'id':'1','name':'Action'}]}," +
+                "{'Id':'3','Title':'Aladdin','Genre':[{'id':'2','name':'Fantasy'}]}," +
+                "{'Id':'4','Title':'Lord of the Rings','Genre':[{'id':'2','name':'Fantasy'}]}]";
+            //var jsonlist = JsonConvert.DeserializeObject<List<Movie>>(jsonResponse);
         }
 
         private void loginToolStripMenuItem_Click(object sender, EventArgs e)
